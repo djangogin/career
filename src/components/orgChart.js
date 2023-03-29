@@ -25,6 +25,9 @@ const OrganizationalChart = (props) => {
         .data(props.data)
         .nodeWidth((d) => 300)
         .nodeHeight((d) => 140)
+          .compact(false)
+          .siblingsMargin((d) => 80)
+          .childrenMargin((d) => 100)
         .compactMarginBetween((d) => 80)
         .onNodeClick((d) => {
           toggleDetailsCard(d);
@@ -39,7 +42,9 @@ const OrganizationalChart = (props) => {
             <CustomNodeContent {...d} />
           );
         })
+      .initialZoom(0.5)
         .render();
+
     }
   }, [props, props.data]);
 

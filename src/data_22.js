@@ -74,7 +74,7 @@ const employees = [
     id: 6,
     parentId: "1",
     name: "Каменских И.М.",
-    positionName: "Член Правления ",
+    positionName: "Член Правления",
     phone: "+74950000005",
     email: "kamenskih@rosatom.ru",
     team: "",
@@ -100,7 +100,7 @@ const employees = [
   },
     {
     id: 8,
-    parentId: "6",
+    parentId: "1",
     name: "Оленин Ю.А.",
     positionName: "Заместитель генерального директора",
     phone: "+74950000007",
@@ -128,7 +128,7 @@ const employees = [
   },
     {
     id: 10,
-    parentId: "6",
+    parentId: "1",
     name: "Новиков С.Г.",
     positionName: "Член Правления",
     phone: "+74950000009",
@@ -154,7 +154,12 @@ const employees = [
     imageUrl: "https://www.rosatom.ru/upload/medialibrary/d62/d62ac0484048e524771fa8fde86b96c5.jpg",
     profileUrl: "https://www.rosatom.ru/about/management/board/nikipelov/"
   },
-
+    {
+    id: 12,
+    parentId: "13",
+    team: "HR team",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
     {
     id: 13,
     parentId: "1",
